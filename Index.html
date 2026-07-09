@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Draxxler Vintage</title>
+
+    <link rel="icon" href="img/log2.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+
+<body>
+
+    <!-- VIDEO DE FONDO -->
+
+    <video class="video-fondo" autoplay muted loop playsinline>
+        <source src="videos/vidp.mp4" type="video/mp4">
+    </video>
+
+    <!-- CAPA -->
+
+    <div class="overlay"></div>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <!-- MENÚ HAMBURGUESA -->
+
+        <div class="menu-container">
+
+            <button class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </button>
+
+            <div class="menu-dropdown" id="menuDropdown">
+
+                <a href="#">COLECCIONES</a>
+
+                <div class="submenu-container">
+
+                    <a href="#" onclick="toggleSubmenu(event)">
+                        CATÁLOGO ▸
+                    </a>
+
+                    <div class="submenu" id="submenuCatalogo">
+
+                        <a href="catalogo.html">
+                            VER TODO
+                        </a>
+
+                        <a href="#">
+                            CHAQUETAS
+                        </a>
+
+                        <a href="#">
+                            HOODIES
+                        </a>
+
+                        <a href="#">
+                            TRACKPANTS
+                        </a>
+
+                        <a href="#" class="extra-raro">
+                            EXTRA RARO
+                        </a>
+
+                    </div>
+
+                </div>
+
+                <a href="#">
+                    CONTACTO
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- MARCA -->
+
+        <div class="marca">
+            DRAXXLER VINTAGE
+        </div>
+
+        <!-- LOGO -->
+
+        <img src="img/log2.jpg" alt="Logo Draxxler" class="logo">
+
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+
+    <main>
+
+        <h1 class="titulo-principal">
+            NUEVA COLECCIÓN
+        </h1>
+
+        <!-- CARRUSEL -->
+
+        <div class="carrusel">
+
+            <div class="slides">
+
+                <!-- FOTO 1 -->
+
+                <img src="img/model.jpg"
+                     class="slide active"
+                     alt="Colección 1">
+
+                <!-- FOTO 2 -->
+
+                <img src="img/modelf.jpg"
+                     class="slide"
+                     alt="Colección 2">
+
+                <!-- VIDEO -->
+
+                <video class="slide"
+                       muted
+                       loop
+                       playsinline>
+
+                    <source src="videos/vidp.mp4"
+                            type="video/mp4">
+
+                </video>
+
+            </div>
+
+            <!-- INDICADORES -->
+
+            <div class="indicadores">
+
+                <span class="dot active" data-slide="0"></span>
+
+                <span class="dot" data-slide="1"></span>
+
+                <span class="dot" data-slide="2"></span>
+
+            </div>
+
+        </div>
+
+        <!-- BOTÓN -->
+
+        <a href="catalogo.html" class="btn">
+
+            VER CATÁLOGO
+
+        </a>
+
+    </main>
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/index.js"></script>
+
+</body>
+
+</html>
